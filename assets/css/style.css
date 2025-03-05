@@ -1,0 +1,144 @@
+:root {
+    --textoPrincipal: #505050;
+    --azulPrincipal: rgb(0, 0, 80);
+}
+
+.cabecalho{
+    background-color: #f6f6f6;
+    display: flex;
+    justify-content: space-between;
+    padding: 0.5rem;
+    background-color: var(--azulPrincipal);
+}
+
+.cabecalho .logotipo{
+    width: 100px;
+    height: 100px;
+}
+
+.menu-lista{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 100%;
+    margin-top: 0;
+}
+
+.menu-item{
+    display: flex;
+    align-items: center;
+    list-style: none;
+    padding: 0.5rem;    
+}
+
+.menu-link{
+    text-decoration: none;
+    color: white;
+    font-size: 1.2rem;
+    transition: all 0.3s ease-in-out;
+}
+
+.menu-link:hover{
+    text-decoration: none;
+    color: orange;
+    font-size: 1.2rem;
+}
+
+.banner{
+    background: url(/assets/img/banner.png) no-repeat center / cover;
+    height: calc(100vh - 145px);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    text-shadow: black 3px 3px 3px;
+    padding: 1rem;
+}
+
+.banner-titulo{
+    font-size: 3.5rem;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+
+.banner-descricao{
+    font-size: 2rem;
+}
+
+.sobre{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding: 2.5rem;
+}
+
+.sobre-titulo{
+    font-size: 2.5rem;
+    font-weight: bold;
+    text-transform: uppercase;
+    color: var(--azulPrincipal);
+}
+
+.sobre-descricao{
+    font-size: 1.25rem;
+    text-align: center;
+    font-weight: 100;
+    color: #4e4e4e
+}
+
+.servicos{
+    background-color: #e5e5e5;
+    display: flex;
+    flex-wrap: wrap;
+    padding: 2rem;
+}
+
+.servicos-item{
+    text-align: center;
+    background-color: #fdfdfd;
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 5rem;
+    margin: 1rem;
+    width: calc(33.33% - 2rem);
+    border-radius: 1rem;
+}
+
+.servicos-imagem{
+    width: 100%;
+    height: 150px;
+    border-radius: 1rem 1rem 0 0;
+}
+
+.servicos-subtitulo{
+    margin-top: 1rem;
+}
+
+.img-desentupimento{
+    background: url(/assets/img/encanador.png) no-repeat center / cover;
+}
+
+.img-eletrica{
+    background: url(/assets/img/eletrica.png) no-repeat center / cover;
+}
+
+.img-vazamentos{
+    background: url(/assets/img/vazamentos.png) no-repeat center / cover;
+}
+
+footer{
+    text-align: center;
+    font-size: 0.8rem;
+    color: white;
+    background-color: var(--azulPrincipal);
+    float: left;
+    width: 100%;
+}
+
+footer p{
+    margin: 1.25rem;
+    line-height: 0.5rem;
+}
