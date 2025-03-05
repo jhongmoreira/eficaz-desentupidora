@@ -80,6 +80,7 @@
     font-weight: bold;
     text-transform: uppercase;
     color: var(--azulPrincipal);
+    text-align: center;
 }
 
 .sobre-descricao{
@@ -90,10 +91,14 @@
 }
 
 .servicos{
+    text-align: center;
     background-color: #e5e5e5;
+    padding: 2rem;
+}
+
+.servicos-container{
     display: flex;
     flex-wrap: wrap;
-    padding: 2rem;
 }
 
 .servicos-item{
@@ -142,3 +147,79 @@ footer p{
     margin: 1.25rem;
     line-height: 0.5rem;
 }
+
+.contato{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding: 2.5rem;
+}
+
+.contato-titulo{
+    font-size: 2.5rem;
+    font-weight: bold;
+    text-transform: uppercase;
+    color: var(--azulPrincipal);
+}
+
+.contato-descricao{
+    font-size: 1.25rem;
+    text-align: center;
+    font-weight: 100;
+    color: #4e4e4e
+}
+
+.contato-whatsapp{
+    font-size: 1.25rem;
+    text-align: center;
+    font-weight: 100;
+    color: #4e4e4e;
+    align-items: center;
+}
+
+.contato-whatsapp img{
+    width: 25px;
+    height: 25px;
+    margin-right: 0.5rem;
+}
+
+.contato-whatsapp a{
+    display: flex;
+    text-decoration: none;
+    color: var(--azulPrincipal);
+    margin: 0;
+    padding: 0;
+    font-weight: 600;
+    transition: all 0.3s ease-in-out;
+}
+
+.contato-whatsapp a:hover{
+    text-decoration: none;
+    color: orange;
+}
+
+@media screen and (max-width: 768px){
+    .menu-link{
+        font-size: 0.9rem ;
+    }    
+
+    .banner-titulo{
+        text-align: center;
+        font-size: 2rem;
+    }
+
+    .banner-descricao{
+        font-size: 1rem;
+    }
+
+    .servicos-item{
+        width: 100%;
+    }
+
+    .rodape{
+        font-size: 0.6rem;
+    }
+}
+
+
